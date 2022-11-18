@@ -1,0 +1,5 @@
+<mat-tab-group mat-stretch-tabs="true" *ngIf="tabs">
+  <ng-container *ngFor="let tab of tabs">
+    <mat-tab [label]="tab.label">{{ tab.content }}</mat-tab>
+  </ng-container>
+</mat-tab-group>
